@@ -1,0 +1,65 @@
+insert into roles values(1, 'Manager');
+insert into roles values(2, 'Employee');
+insert into roles values(3, 'Customer');
+insert into roles values(4, 'Applicant');
+__________________________________________________________________________
+insert into accounts values('Admin', 'AJ02', 1, '99999');
+insert into accounts values('mscott', 'mikesc', 2, '88888');
+insert into accounts values('dwightks', 'mukduk', 2, '77777');
+insert into accounts values('pammb', 'pb0101', 2, '66666');
+insert into accounts values('kev77', 'kscranton', 3, '55555');
+insert into accounts values('jimothy', 'hjim', 3, '44444');
+insert into accounts values('mer4', 'm8103', 3, '33333');
+insert into accounts values('stanley7', 'sh891', 4, '10293');
+__________________________________________________________________________
+insert into all_ssn values('99999');
+insert into all_ssn values('88888');
+insert into all_ssn values('77777');
+insert into all_ssn values('66666');
+insert into all_ssn values('55555');
+insert into all_ssn values('44444');
+insert into all_ssn values('33333');
+insert into all_ssn values('10293');
+__________________________________________________________________________
+insert into manager values('99999', 'A.', 'J.', 'DB', '10-mar-1979', '0597034072', 'Ramallah', 'aj@gmail.com', 'F');
+__________________________________________________________________________
+insert into Employees values('88888', 'Michael', 'G.', 'Scott', '7-apr-1982', '0599209503', 'Nablus', 'mikeg@gmail.com', 'M', 2500);
+insert into Employees values('77777', 'Dwight', 'K.', 'Schrutt', '14-feb-1988', '0599448903', 'Hebron', 'dschrutt@gmail.com', 'M', 3200);
+insert into Employees values('66666', 'Pam', 'R.', 'Beesly', '5-mar-1994', '0599460276', 'Nablus', 'pamelab@gmail.com', 'F', 2500);
+__________________________________________________________________________
+insert into Customers values('55555', 'Kevin', 'B.', 'Malone', '15-feb-1984', '0569230676', 'Tulkarim', 'k3vinm@gmail.com', 'M');
+insert into Customers values('44444', 'Jim', 'K.', 'Halpert', '8-sep-1987', '0569910046', 'Nablus', 'jimh89@gmail.com', 'M');
+insert into Customers values('33333', 'Meredith', 'F.', 'Palmer', '18-may-1981', '0561058254', 'Ramallah', 'mpal5@gmail.com', 'F');
+__________________________________________________________________________
+insert into Applicants values('10293', 'Stanley', 'J.', 'Hudson', '8-aug-1979', '0592305408', 'AL-Bireh', 'Stanley88@gmail.com', 'M', 'Bachelor', '9-14');
+__________________________________________________________________________
+insert into languages values('10293', 'Arabic');
+insert into languages values('10293', 'English');
+insert into languages values('10293', 'Spanish');
+insert into languages values('98924', 'English');
+__________________________________________________________________________
+insert into working_days values('10293', 'Saturday');
+insert into working_days values('10293', 'Monday');
+insert into working_days values('10293', 'Thursday');
+insert into working_days values('98924', 'Saturday');
+insert into working_days values('98924', 'Wednesday');
+__________________________________________________________________________
+
+insert into books(isbn, Title, author, b_description, price, quantity, b_language) values('2314', 'The Book Thief', 'Markus Zusak','Young orphan Liesel (Sophie Nélisse) arrives at the home of her new foster parents. Liesel grows to love books, even rescuing one from a Nazi bonfire.', 50, 5, 'English');
+insert into books(isbn, Title, author, b_description, price, quantity, b_language) values('9284', 'The Dream Thieves', 'Maggie Stiefvater','The second book in The Raven Cycle series, The Dream Thieves is the 2013 young-adult fantasy romance novel by American author Maggie Stiefvater. Set during the summertime in the fictional town of Henrietta, Virginia, the story follows Ronan Lynch, a Raven Boy who has a secret ability to bring items out of his dreams.', 50, 4, 'English');
+insert into books(isbn, Title, author, b_description, price, quantity, b_language) values('9923', 'The Goldfinch', 'Donna Tartt', 'Theodore Decker was 13 years old when his mother was killed in a bombing at the Metropolitan Museum of Art in New York. The tragedy changes the course of his life, sending him on a stirring odyssey of grief and guilt, reinvention and redemption, and even love. Through it all, he holds on to one tangible piece of hope from that terrible day -- a painting of a tiny bird chained to its perch.', 55, 4, 'English');
+insert into books(isbn, Title, author, b_description, price, quantity, b_language) values('7992', 'Illuminate ', 'Patti Sanchez, Nancy Duarte', 'The book is centered around the Innovation Life-Cycle and the Venture Scape. It takes us through the story of change through the stages: Dream, Leap, Fight, Climb, Arrive and Re-Dream.', 100, 2, 'English');
+insert into books(isbn, Title, author, b_description, price, quantity, b_language) values('8393', 'The Raven King', 'Maggie Stiefvater', 'This magical world''s mythology has the air of a dark fairy tale: Gansey previously died but was brought back; Blue is destined to kill her true love with a kiss; Noah is a ghost, struggling to stick around long after he should have faded away; Ronan is a dreamer whose dreamed creations come to life.', 50, 1, 'English');
+__________________________________________________________________________
+insert into carts values(null, '44444', '7-mar-2020', 150);
+insert into items(c_id, isbn, quantity) values(1, '7992', 1);
+insert into items(c_id, isbn, quantity) values(1, '8393', 1);
+__________________________________________________________________________
+insert into carts(ssn, c_date, t_price) values('55555', '15-apr-2020', 100);
+insert into items(c_id, isbn, quantity) values(2, '2314', 2);
+__________________________________________________________________________
+insert into suggestions(s_no, ssn, isbn, title, author, s_date) values(null, '33333', '4492', 'Divergent', 'Veronica Roth', '20-may-2021');
+
+
+
+
